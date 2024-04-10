@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 625px;
+    margin: auto;
+    font-family:"Mulish", sans-serif;
+}
+
+.header{
+    width: 625px;
+    height: 211px;
+    background-color: #20225E;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.form{
+    color: #151749;
+}
+
+.input{
+    width: 391px;
+    display: inline-block;
+    margin: 20px 117px;
+}
+
+input{
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    color: #151749;
+}
+
+.content{
+    font-size: 14px;
+}
+
+.text-field{
+    border: none; 
+    border-bottom: 1px solid black;
+}
+
+.btn-submit {
+    border-radius: 30px; 
+    padding: 27px 93px; 
+    background-color: #20225E; 
+    color: #fff; 
+    font-size: 18px;
+    margin-top: 45px;
+}
