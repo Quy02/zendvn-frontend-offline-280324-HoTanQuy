@@ -2,8 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
-
+body{
+    background-color: #EEF3F9;
+}
 .container{
     width: 625px;
     margin: auto;
@@ -11,42 +14,79 @@
 }
 
 .header{
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
     width: 625px;
     height: 211px;
     background-color: #20225E;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
     color: #fff;
-    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dot {
+    height: 46px;
+    width: 46px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F316E;
+    margin: 20px;
+  }
+.header h1 {
+    font-size: 32px;
+}
+
+.body {
+    background-color:#ffffff;
+    text-align: center;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
 }
 
 .form{
-    color: #151749;
-}
-
-.input{
-    width: 391px;
+    padding-top: 65px;
     display: inline-block;
-    margin: 20px 117px;
-}
-
-input{
-    width: 100%;
-}
-
-select{
-    width: 100%;
     color: #151749;
 }
 
 .content{
     font-size: 14px;
 }
+.input {
+    width: 391px;
+    text-align: left;
+    margin-bottom: 40px;
+}
 
-.text-field{
-    border: none; 
-    border-bottom: 1px solid black;
+.text-field input {
+    margin-top: 14px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid #D3D5F1;
+    padding-bottom: 13px;
+}
+
+.text-field input::placeholder {
+    color: #151749;
+    margin-bottom: 13px;
+}
+
+.combo-box {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid #D3D5F1;
+    color: #151749;
+    margin-top: 14px;
+    padding-bottom: 13px;
 }
 
 .btn-submit {
@@ -55,5 +95,6 @@ select{
     background-color: #20225E; 
     color: #fff; 
     font-size: 18px;
-    margin-top: 45px;
+    margin-top: 25px;
+    margin-bottom: 70px;
 }
