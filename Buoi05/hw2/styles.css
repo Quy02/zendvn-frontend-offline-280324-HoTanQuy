@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* menu */
+.header {
+    height: 70px;
+}
+
+.menu {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 17px;
+}
+
+.btn {
+    border: 2px solid rgba(29, 29, 36, 0.5);
+    padding: 12px 27px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Introduction */
+.intro {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(248, 249, 252, 1);
+}
+
+.avatar {
+    width: 400px;
+    /* position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 200px); */
+    border-radius: 50%;
+    margin-right: 34px;
+    border: 10px solid #fff;
+}
+.content{
+    /* position: absolute;
+    left: calc(50% + 100px);
+    top: calc(50% - 200px); */
+    font-family: "Montserrat", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.content1{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.content3{
+    
+    color: rgba(249, 0, 77, 1);
+}
+
+/* Projects */
+.img-pj{
+    width: 540px;
+    height: 440px;
+    border-radius: 10px;
+}
+
+.my-projects {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+}
+
+.project {
+    text-align: center;
+    height: 1711px;
+    padding-top: 120px;
+    font-family: "Poppins", sans-serif;
+}
+
+.projects{
+    display: inline-block;
+    margin-right: 34px;
+}
+
+.projects-title{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 26px;
+}
+
+.describe {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(0, 1, 12, 1);
+    color: rgba(198, 201, 216, 1);
+    height: 85px;
+}

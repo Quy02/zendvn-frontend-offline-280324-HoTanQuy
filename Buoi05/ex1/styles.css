@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box-green{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    position: fixed;
+    text-align: center;
+}
+
+.box-red{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+}
+/*top*/
+.box-green.top-left{
+    top: 0px;
+    left: 0px;
+}
+.box-green.top-right{
+    top: 0px;
+    right: 0px;
+}
+.box-green.top-center{
+    top: 0px;
+    left: calc(50% - 100px);   /*center = left 50% - 50% width*/
+    
+}
+/*center*/
+
+.box-green.left-center{
+    top: calc(50% - 50px);   /*center = 50% - 1/2 height*/
+    left: 0px
+}
+
+.box-green.center-center{
+    top: calc(50% - 50px);
+    left: calc(50% - 100px);
+}
+.box-green.right-center{
+    top: calc(50% - 50px);
+    right: 0px;
+}
+
+.box-red.ctl{
+    top: -50px; /*=100% height*/
+    left: -100px; /*=100% width*/
+}
+.box-red.ctr{
+    top: -50px;
+    right: -100px;
+}
+.box-red.cbl{
+    top: 100px;
+    left: -100px;
+}
+.box-red.cbr{
+    top: 100px;
+    right: -100px;
+}
+/*bottom*/
+.box-green.bottom-left{
+    bottom: 0px;
+    left: 0px;
+}
+.box-green.bottom-right{
+    bottom: 0px;
+    right: 0px;
+}
+.box-green.bottom-center{
+    bottom: 0px;
+    left: calc(50% - 100px);
+}
+
