@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather";
+}
+
+.container {
+    width: 1563px;
+    padding: 62px;
+    background-color: #EFF0F1;
+    border-radius: 26px;
+}
+
+h2 {
+    margin-bottom: 24px;
+    color: #0E0E38;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Merriweather";
+}
+
+.collection-category-filter {
+    margin-bottom: 56px;
+}
+
+
+.collection-category-filter-item {
+    background-color: #fff;
+    border-radius: 8px;
+    border: #fff;
+    padding: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #0E0E38;
+}
+
+
+.collection-list{
+    display: flex;
+    margin-left: -32px;
+    margin-right: -32px;
+}
+
+.collection-item {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: calc(100% / 3 - 64px); /*tru margin*/
+}
+
+.thumb-large {
+    width: 100%;
+}
+
+.thumb-small {
+    display: flex;
+    margin-top: 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.thumb-small > img {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: calc(100%/ 3 - 16px);
+}
+
+.meta {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    color: #0E0E38;
+}
