@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgba(177, 185, 216, 1);
+    background-color: rgba(26, 32, 54, 1);
+}
+.container {
+    background-color: rgba(37, 43, 66, 1);
+    display: flex;
+    width: 975px;
+    padding: 35px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.menu {
+    font-size: 32px;
+    background-color: rgba(26, 32, 54, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.category {
+    padding: 13px;
+    margin: 7.5px 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.gr {
+    background-color: rgba(36, 43, 66, 1);
+}
+.Show {
+    margin: 35px 40px;
+    
+}
+
+.view {
+    
+    padding: 10px;
+}
+.small-icon{
+   background-color: rgba(26, 32, 54, 1);
+   padding: 10px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.list {
+    border: 2px solid rgba(26, 32, 54, 1);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header {
+    display: flex;
+    justify-content:space-between;
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.view {
+    display: flex;
+}
+
+.groups {
+    display: flex;
+}
+
+.create {
+    width: 30%;
+    text-align: center;
+    background-color: rgba(46, 54, 80, 1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.group {
+    width: 30%;
+    background-color: rgba(26, 32, 54, 1);
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.members {
+    font-size: 14px;
+}

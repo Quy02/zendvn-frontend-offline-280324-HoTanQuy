@@ -7,6 +7,7 @@
 
 body {
     font-family: "Merriweather";
+    background-color: #095900;
 }
 
 .container {
@@ -14,6 +15,10 @@ body {
     padding: 62px;
     background-color: #EFF0F1;
     border-radius: 26px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
 }
 
 h2 {
@@ -77,4 +82,26 @@ h2 {
     display: flex;
     justify-content: space-between;
     color: #0E0E38;
+}
+
+.circle-top {
+    position: absolute;
+    width: 310px;
+    height: 294px;
+    border-radius: 50%;
+    background-color: #ffffff1c;
+    top: -20%;
+    right: 10%;
+    z-index: -1;
+}
+
+.circle-bottom {
+    position: absolute;
+    width: 310px;
+    height: 294px;
+    border-radius: 50%;
+    background-color: #ffffff1c;
+    top: 80%;
+    right: 70%;
+    z-index: -1;
 }
