@@ -184,6 +184,7 @@
 }
 
 .top-pick-article-meta {
+    margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -363,6 +364,7 @@
 }
 
 .beauty-article-meta {
+    margin-top: 16px;
     display: flex;
     align-items: center;
 }
@@ -463,7 +465,6 @@
     font-weight: 700;
     text-decoration: none;
     color: rgba(45, 55, 72, 1);
-
 }
 
 .trending-article-meta {
