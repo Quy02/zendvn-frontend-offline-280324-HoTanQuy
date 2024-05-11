@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.featured-categories-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px -15px;
+}
+
+.featured-category-item {
+    width: calc(100% / 4 - 30px);
+    margin: 0px 15px;
+    background-color: aquamarine;
+}
+
+.hero-article-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px -15px;
+}
+
+.hero-article-info {
+    width: calc(100% / 3 * 2 - 30px);
+    background-color: aqua;
+    margin: 0px 15px;
+}
+
+.hero-article-image {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+    background-color: aqua;
+}
+
+.top-pick-article-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px -15px;
+}
+
+.top-pick-article-item {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+    background-color: blueviolet;
+}
+
+.fashion-style-article-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px -15px;
+}
+
+.fashion-style-article-item {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+    background-color: rgb(226, 43, 95);
+}
+
+.beauty-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.beauty-article-item {
+    width: calc(100% / 2 - 30px);
+    margin: 15px 15px;
+    background-color: rgb(0, 30, 255);
+}
+
+.trending-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.trending-article-item {
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px;
+    background-color: rgb(17, 255, 0);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.footer-left {
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+    background-color: rgb(255, 208, 0);
+}
+
+.footer-right-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+
+}
+
+.footer-right {
+    width: calc(100% / 3 * 2 - 30px);
+    margin: 15px;
+}
+
+.footer-list-wrapper {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+    background-color: bisque;
+}

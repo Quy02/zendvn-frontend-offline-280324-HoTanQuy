@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+.content {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* danh mục nổi bật */
+.featured-categories-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.featured-category-item {
+  width: calc(100% / 4);
+}
+
+.featured-category-item .content {
+  background-color: #93b5c6;
+}
+
+/* Bài viết tiêu điểm */
+.hero-article-info {
+  width: calc(100% / 3 * 2);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero-article-image {
+  width: calc(100% / 3);
+}
+
+.hero-article-wrapper .content {
+  background-color: #ddedaa;
+}
+
+/* bài viết nổi bật trong tháng */
+
+
+.top-pick-article-item {
+  width: calc(100% / 3);
+}
+
+.top-pick-article-item .content {
+  background-color: #f0cf65;
+}
+
+/* Fashion and style */
+
+.fashion-style-article-item {
+  width: calc(100% / 3);
+}
+
+.fashion-style-article-item .content {
+  background-color: #d7816a;
+}
+
+/* Beauty */
+
+.beauty-article-item {
+  width: calc(50%);
+}
+
+.beauty-article-item .content {
+  background-color: #bd4f6c;
+}
+
+/* Trending */
+
+.trending-article-item {
+  width: calc(100% / 3);
+}
+
+.trending-article-item .content {
+  background-color: #93b5c6;
+}
+
+/* footer */
+
+.footer-left {
+  width: calc(100% / 3);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-left .content {
+  background-color: #ddedaa;
+}
+
+.footer-right {
+  width: calc(100% / 3 * 2);
+}
+
+.footer-list-wrapper {
+  width: calc(100% / 3);
+}
+
+.footer-list-wrapper .content {
+  background-color: #f0cf65;
+}

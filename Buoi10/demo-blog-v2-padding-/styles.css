@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* danh mục nổi bật */
+.featured-categories-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.featured-category-item {
+    width: calc(100% / 4);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.featured-category-item .content {
+    background-color: #93B5C6;
+}
+
+/* Bài viết tiêu điểm */
+.hero-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.hero-article-info {
+    width: calc(100% / 3 * 2);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero-article-image {
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero-article-wrapper .content {
+    background-color: #DDEDAA;
+}
+
+/* bài viết nổi bật trong tháng */
+.top-pick-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.top-pick-article-item {
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.top-pick-article-item .content {
+    background-color: #F0CF65;
+}
+
+
+/* Fashion and style */
+.fashion-style-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.fashion-style-article-item {
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fashion-style-article-item .content {
+    background-color: #D7816A;
+}
+
+/* Beauty */
+.beauty-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.beauty-article-item {
+    width: calc(50%);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.beauty-article-item .content {
+    background-color: #BD4F6C;
+}
+
+/* Trending */
+.trending-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.trending-article-item {
+    width: calc(100% / 2);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.trending-article-item .content {
+    background-color: #93B5C6;
+}
+
+/* footer */
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.footer-left {
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-left .content {
+    background-color: #DDEDAA;
+}
+
+.footer-right {
+    width: calc(100% / 3 * 2);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-right-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.footer-list-wrapper {
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-list-wrapper .content {
+    background-color: #F0CF65;
+}

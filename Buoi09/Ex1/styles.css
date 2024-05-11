@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css?family=Hind");
+@import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.navigation-bar {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Hind";
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    margin: 11px;
+
+}
+
+.main-logo {
+    color: rgba(45, 55, 72, 1);
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.logo-icon {
+    font-size: 28px;
+    color: #5A67D8;
+}
+
+.menu-item {
+    margin: 0px 11px;
+    font-size: 18px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgba(113, 128, 150, 1);
+}
+
+.active>.menu-link {
+    color: #5A67D8;
+}
+
+#featured-categories {
+    background-color: #F4F4F4;
+    padding: 72px 0px;
+}
+
+.featured-categories-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px -15px;
+    flex-wrap: wrap;
+
+}
+
+.featured-category-item {
+    background-color: #fff;
+    margin: 0px 15px;
+    width: calc(100% / 4 - 30px);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.featured-category-item i {
+    color: rgba(90, 103, 216, 1);
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.featured-category-name {
+    color: #718096;
+}
+
+.featured-category-content {
+    text-decoration: none;
+    font-family: "Hind";
+    font-size: 20px;
+}
+
+#hero-article {
+    background-color: #F4F4F4;
+}
+
+.hero-article-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-label {
+    padding: 5px 20px;
+    background-color: rgba(90, 103, 216, 0.05);
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Hind";
+}
+
+.hero-article-info {
+    margin-right: 30px;
+    width: calc(100% / 3 * 2 - 30px);
+}
+
+.hero-article-title {
+    margin-top: 24px;
+    font-size: 45px;
+    color: rgba(45, 55, 72, 1);
+    font-family: "Libre Baskerville";
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero-article-description {
+    font-size: 18px;
+    color: #718096;
+    font-family: "Hind";
+    font-weight: 400;
+}
+
+.hero-article-image {
+    width: calc(100% / 3);
+}
+
+.hero-article-thumb {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* <!-- Phần bài viết nổi bật trong tháng --> */
+
+#top-pick-article {
+    padding: 96px 0px;
+}
+
+.top-pick-article-heading {
+    padding-bottom: 40px;
+    font-family: "Libre Baskerville";
+    color: rgba(45, 55, 72, 1);
+    font-weight: 700px;
+}
+
+.top-pick-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    font-family: "Hind";
+}
+
+.top-pick-article-item {
+    width: calc(100% /3 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.top-pick-article-thumb {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.top-pick-article-link {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1)
+}
+
+.top-pick-article-meta {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-pick-article-info {
+    position: absolute;
+    top: 50%;
+    padding: 0px 40px;
+}
+
+.top-pick-article-author-avatar {
+    width: 58px;
+    border-radius: 50%;
+    border: 2px solid rgba(153, 153, 153, 1);
+}
+
+.top-pick-article-author-name {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.top-pick-article-date {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* <!-- Phần bài viết thuộc danh mục Fashion and style --> */
+#fashion-style-article {
+    background-color: rgba(248, 249, 250, 1);
+    padding: 96px 0px;
+}
+
+.fashion-style-article-heading {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Libre Baskerville";
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1)
+}
+
+.fashion-style-article-heading>span {
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Libre Baskerville";
+}
+
+.btn-view-more {
+    background-color: rgba(226, 232, 240, 1);
+    padding: 6px 20px;
+    color: rgba(113, 128, 150, 1);
+    border-radius: 15px;
+    font-family: "Hind";
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.fashion-style-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    font-family: "Hind";
+}
+
+.fashion-style-article-item {
+    width: calc(100% /3 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.fashion-style-article-info {
+    padding: 25px;
+}
+
+.fashion-style-article-thumb {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.fashion-style-article-link {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(45, 55, 72, 1);
+}
+
+.fashion-style-article-meta {
+    margin-top: 16px;
+    display: flex;
+}
+
+.fashion-style-article-author-avatar {
+    width: 58px;
+    border-radius: 50%;
+    border: 2px solid rgba(153, 153, 153, 1);
+}
+
+.fashion-style-article-author-name {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Hind";
+}
+
+.fashion-style-article-date {
+    color: rgba(113, 128, 150, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* beauty */
+
+#beauty-article {
+    background-color: rgba(244, 244, 244, 1);
+    padding: 96px 0px;
+}
+
+.beauty-article-heading {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Libre Baskerville";
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1)
+}
+
+.beauty-article-heading>.btn-view-more {
+    margin-bottom: 24px;
+}
+
+.beauty-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.beauty-article-item {
+    width: calc(100% / 2 - 30px);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.beauty-article-content {
+    display: flex;
+    width: 100%;
+}
+
+.beauty-article-thumb {
+    width: calc(100% / 2.5);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.beauty-article-info {
+    width: calc(100% / 2.5 * 1.5);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beauty-article-link {
+    font-family: "Hind";
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(45, 55, 72, 1);
+}
+
+.beauty-article-meta {
+    display: flex;
+    align-items: center;
+}
+
+.beauty-article-author-avatar {
+    width: 58px;
+    border-radius: 50%;
+    border: 2px solid rgba(153, 153, 153, 1);
+    margin-right: 10px;
+}
+
+.beauty-article-author-name {
+    color: rgba(45, 55, 72, 1);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Hind";
+}
+
+.beauty-article-date {
+    color: rgba(113, 128, 150, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Trending */
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#trending-article {
+    background-color: rgba(248, 249, 250, 1);
+    padding: 96px 0px;
+}
+
+.trending-article-heading {
+    padding-bottom: 40px;
+    font-family: "Libre Baskerville";
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(45, 55, 72, 1)
+}
+
+.trending-article-wrapper {
+    display: flex;
+    margin: 0px -15px;
+}
+
+.trending-article-item {
+    width: calc(100% / 2 - 30px);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0px 15px;
+}
+
+.trending-article-content {
+    display: flex;
+
+}
+
+.trending-article-thumb {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: calc(100% / 2);
+}
+
+.trending-article-info {
+    width: calc(100% / 2);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-article-info>.category-label {
+    color: rgba(90, 103, 216, 1);
+    display: inline-flex;
+    background-color: rgba(90, 103, 216, 0.05);
+    font-family: "Hind";
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.trending-article-title {
+    margin-top: 16px;
+}
+
+.trending-article-description {
+    margin: 16px 0px;
+    color: rgba(113, 128, 150, 1);
+    font-size: 16px;
+    font-family: "Hind";
+}
+
+.trending-article-link {
+    font-family: "Hind";
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(45, 55, 72, 1);
+
+}
+
+.trending-article-meta {
+    display: flex;
+    align-items: center;
+}
+
+.trending-article-author-avatar {
+    width: 58px;
+    border-radius: 50%;
+    border: 2px solid rgba(153, 153, 153, 1);
+    margin-right: 10px;
+}
+
+.trending-article-author-name {
+    color: rgba(45, 55, 72, 1);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Hind";
+}
+
+.trending-article-date {
+    color: rgba(113, 128, 150, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* <!-- Form Subscribe --> */
+
+.container {}
+
+#subscribe {
+    background-color: rgba(244, 244, 244, 1);
+    padding: 96px 98px;
+}
+
+.subscribe-content {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 96px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.subscribe-heading {
+    font-family: "Libre Baskerville";
+    font-weight: 700;
+    font-size: 26px;
+    color: rgba(45, 55, 72, 1);
+}
+
+.subscribe-description {
+    font-family: "Hind";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(113, 128, 150, 1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subscribe-input-email {
+    width: 400px;
+    height: 49.5px;
+    border-radius: 6px;
+    background-color: rgba(244, 244, 244, 1);
+    border: 1px solid rgba(244, 244, 244, 1);
+    font-family: "Hind";
+}
+
+.subscribe-input-email::placeholder {
+    padding-left: 20px;
+}
+
+.btn-subscribe {
+    padding: 15px 35px;
+    border-radius: 6px;
+    border: 1px solid rgba(90, 103, 216, 1);
+    background-color: rgba(90, 103, 216, 1);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-family: "Inter";
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 64px 0px;
+}
+
+.footer-left {
+    width: calc(100% / 3);
+}
+
+.main-logo {
+    font-weight: 600;
+    font-size: 28px;
+    font-family: "Hind";
+}
+
+.all-rights-reserved {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Hind";
+    color: rgba(113, 128, 150, 1);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.design-by {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Libre Baskerville";
+    color: rgba(45, 55, 72, 1);
+}
+
+.design-by-company {
+    color: rgba(90, 103, 216, 1);
+}
+
+.footer-right-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-right {
+    width: calc(100% / 3 * 2);
+
+}
+
+.footer-list {
+    list-style: none;
+
+}
+
+.footer-title {
+    color: rgba(45, 55, 72, 1);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Libre Baskerville";
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-family: "Hind";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(113, 128, 150, 1);
+}
