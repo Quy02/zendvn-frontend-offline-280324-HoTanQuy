@@ -113,7 +113,7 @@
 }
 
 .hero-article-info {
-    margin-right: 30px;
+    margin: 25px;
     width: calc(100% / 3 * 2 - 30px);
 }
 
@@ -199,6 +199,7 @@
     width: 58px;
     border-radius: 50%;
     border: 2px solid rgba(153, 153, 153, 1);
+    margin-right: 10px;
 }
 
 .top-pick-article-author-name {
@@ -349,7 +350,7 @@
 
 .beauty-article-info {
     width: calc(100% / 2.5 * 1.5);
-    margin-left: 10px;
+    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -433,7 +434,7 @@
 
 .trending-article-info {
     width: calc(100% / 2);
-    margin-left: 10px;
+    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -441,7 +442,6 @@
 
 .trending-article-info>.category-label {
     color: rgba(90, 103, 216, 1);
-    display: inline-flex;
     background-color: rgba(90, 103, 216, 0.05);
     font-family: "Hind";
     font-weight: 600;
