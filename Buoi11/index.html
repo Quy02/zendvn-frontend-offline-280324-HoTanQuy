@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="grif.css">
+  </head>
+
+  <body>
+    <!-- Phần Header -->
+    <header>
+      <div class="container">
+        <nav class="navigation-bar">
+          <a href="#" class="main-logo">
+            <i class="fa-regular fa-newspaper logo-icon"></i>
+            NewsBlog
+          </a>
+          <ul class="main-menu">
+            <li class="menu-item active">
+              <a href="#" class="menu-link">home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                more
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Phần Danh mục nổi bật -->
+    <section id="featured-categories">
+      <div class="container">
+        <div class="featured-categories-wrapper">
+          <div class="featured-category-item">
+            <a href="#" class="featured-category-content">
+              <i class="fa-solid fa-bath featured-category-icon"></i>
+              <h4 class="featured-category-name">Beauty</h4>
+            </a>
+          </div>
+          <div class="featured-category-item">
+            <a href="#" class="featured-category-content">
+              <i class="fa-solid fa-child-dress featured-category-icon"></i>
+              <h4 class="featured-category-name">Fashion and style</h4>
+            </a>
+          </div>
+          <div class="featured-category-item">
+            <a href="#" class="featured-category-content">
+              <i class="fa-solid fa-cutlery featured-category-icon"></i>
+              <h4 class="featured-category-name">Food and wellness</h4>
+            </a>
+          </div>
+          <div class="featured-category-item">
+            <a href="#" class="featured-category-content">
+              <i class="fa-solid fa-pie-chart featured-category-icon"></i>
+              <h4 class="featured-category-name">Lifestyle</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần Bài viết tiêu điểm -->
+    <section id="hero-article">
+      <div class="container">
+        <div class="hero-article-wrapper">
+          <div class="hero-article-info">
+            <div class="hero-article-info-content">
+              <a href="#" class="category-label">Beauty</a>
+              <h1 class="hero-article-title">Create an Art that shows the beauty in everyone's ideas of flaws.</h1>
+              <p class="hero-article-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id accusantium officia quod quasi
+                necessitatibus perspiciatis Harum error provident quibusdam tenetur. Ut fermentum leo quis sapienet
+                faucibus, at scelerisque sem feugiat. Nulla in eros purus.
+              </p>
+            </div>
+          </div>
+          <div class="hero-article-image">
+            <img src="./images/beauty.jpg" class="hero-article-thumb" alt="hero article thumb" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần bài viết nổi bật trong tháng -->
+    <section id="top-pick-article">
+      <div class="container">
+        <h2 class="top-pick-article-heading">Top Pick's of this month</h2>
+        <div class="top-pick-article-wrapper">
+          <article class="top-pick-article-item">
+            <div class="top-pick-article-content">
+              <img src="images/pic1.jpg" alt="article thumb" class="top-pick-article-thumb" />
+              <div class="top-pick-article-info">
+                <h3 class="top-pick-article-title">
+                  <a href="#" class="top-pick-article-link"
+                    >Fashion is Creating your Beauty image. The New fashion starts here
+                  </a>
+                </h3>
+                <div class="top-pick-article-meta">
+                  <img src="./images/a1.jpg" alt="" class="top-pick-article-author-avatar" />
+                  <div>
+                    <p class="top-pick-article-author-name">Isabella ava</p>
+                    <span class="top-pick-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="top-pick-article-item">
+            <div class="top-pick-article-content">
+              <img src="images/pic2.jpg" alt="article thumb" class="top-pick-article-thumb" />
+              <div class="top-pick-article-info">
+                <h3 class="top-pick-article-title">
+                  <a href="#" class="top-pick-article-link">
+                    The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor Approved
+                  </a>
+                </h3>
+                <div class="top-pick-article-meta">
+                  <img src="./images/a2.jpg" alt="" class="top-pick-article-author-avatar" />
+                  <div>
+                    <p class="top-pick-article-author-name">Charlotte mia</p>
+                    <span class="top-pick-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="top-pick-article-item">
+            <div class="top-pick-article-content">
+              <img src="images/pic3.jpg" alt="article thumb" class="top-pick-article-thumb" />
+              <div class="top-pick-article-info">
+                <h3 class="top-pick-article-title">
+                  <a href="#" class="top-pick-article-link">
+                    Right food baked with natural ingredient, the use of best quality products
+                  </a>
+                </h3>
+                <div class="top-pick-article-meta">
+                  <img src="./images/a3.jpg" alt="" class="top-pick-article-author-avatar" />
+                  <div>
+                    <p class="top-pick-article-author-name">Elizabeth</p>
+                    <span class="top-pick-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần bài viết thuộc danh mục Fashion and style -->
+    <section id="fashion-style-article">
+      <div class="container">
+        <h2 class="fashion-style-article-heading">
+          <span>Fashion and style</span>
+          <a href="#" class="btn-view-more">View More</a>
+        </h2>
+        <div class="fashion-style-article-wrapper">
+          <article class="fashion-style-article-item">
+            <div class="fashion-style-article-content">
+              <img src="images/fashion1.jpg" alt="article thumb" class="fashion-style-article-thumb" />
+              <div class="fashion-style-article-info">
+                <h3 class="fashion-style-article-title">
+                  <a href="#" class="fashion-style-article-link">
+                    An easy Guide to buying Denim & My favourite styles
+                  </a>
+                </h3>
+                <div class="fashion-style-article-meta">
+                  <img src="./images/a1.jpg" alt="" class="fashion-style-article-author-avatar" />
+                  <div>
+                    <p class="fashion-style-article-author-name">Isabella ava</p>
+                    <span class="fashion-style-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="fashion-style-article-item">
+            <div class="fashion-style-article-content">
+              <img src="images/fashion2.jpg" alt="article thumb" class="fashion-style-article-thumb" />
+              <div class="fashion-style-article-info">
+                <h3 class="fashion-style-article-title">
+                  <a href="#" class="fashion-style-article-link">
+                    The Satin Skirt & How to Wear it all year round fashion
+                  </a>
+                </h3>
+                <div class="fashion-style-article-meta">
+                  <img src="./images/a1.jpg" alt="" class="fashion-style-article-author-avatar" />
+                  <div>
+                    <p class="fashion-style-article-author-name">Isabella ava</p>
+                    <span class="fashion-style-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="fashion-style-article-item">
+            <div class="fashion-style-article-content">
+              <img src="images/fashion3.jpg" alt="article thumb" class="fashion-style-article-thumb" />
+              <div class="fashion-style-article-info">
+                <h3 class="fashion-style-article-title">
+                  <a href="#" class="fashion-style-article-link">
+                    What I'll be Wearing this Party Season & the Festive edit
+                  </a>
+                </h3>
+                <div class="fashion-style-article-meta">
+                  <img src="./images/a1.jpg" alt="" class="fashion-style-article-author-avatar" />
+                  <div>
+                    <p class="fashion-style-article-author-name">Isabella ava</p>
+                    <span class="fashion-style-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần bài viết thuộc danh mục Beauty -->
+    <section id="beauty-article">
+      <div class="container">
+        <h2 class="beauty-article-heading">
+          <span>Beauty</span>
+          <a href="#" class="btn-view-more">View More</a>
+        </h2>
+        <div class="beauty-article-wrapper">
+          <article class="beauty-article-item">
+            <div class="beauty-article-content">
+              <img src="images/beauty1.jpg" alt="article thumb" class="beauty-article-thumb" />
+              <div class="beauty-article-info">
+                <h3 class="beauty-article-title">
+                  <a href="#" class="beauty-article-link">Natural Spa - Where you feel unique and special</a>
+                </h3>
+                <div class="beauty-article-meta">
+                  <img src="./images/a1.jpg" alt="" class="beauty-article-author-avatar" />
+                  <div>
+                    <p class="beauty-article-author-name">Isabella ava</p>
+                    <span class="beauty-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="beauty-article-item">
+            <div class="beauty-article-content">
+              <img src="images/beauty2.jpg" alt="article thumb" class="beauty-article-thumb" />
+              <div class="beauty-article-info">
+                <h3 class="beauty-article-title">
+                  <a href="#" class="beauty-article-link"> How to get Beautiful coloring Highlights this weak</a>
+                </h3>
+                <div class="beauty-article-meta">
+                  <img src="./images/a2.jpg" alt="" class="beauty-article-author-avatar" />
+                  <div>
+                    <p class="beauty-article-author-name">Charlotte mia</p>
+                    <span class="beauty-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="beauty-article-item">
+            <div class="beauty-article-content">
+              <img src="images/beauty3.jpg" alt="article thumb" class="beauty-article-thumb" />
+              <div class="beauty-article-info">
+                <h3 class="beauty-article-title">
+                  <a href="#" class="beauty-article-link"> New Hair Styles can look fabulous and shiny </a>
+                </h3>
+                <div class="beauty-article-meta">
+                  <img src="./images/a3.jpg" alt="" class="beauty-article-author-avatar" />
+                  <div>
+                    <p class="beauty-article-author-name">Elizabeth</p>
+                    <span class="beauty-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="beauty-article-item">
+            <div class="beauty-article-content">
+              <img src="images/beauty4.jpg" alt="article thumb" class="beauty-article-thumb" />
+              <div class="beauty-article-info">
+                <h3 class="beauty-article-title">
+                  <a href="#" class="beauty-article-link"> How our dreams should shine and spray beauty to us. </a>
+                </h3>
+                <div class="beauty-article-meta">
+                  <img src="./images/a1.jpg" alt="" class="beauty-article-author-avatar" />
+                  <div>
+                    <p class="beauty-article-author-name">Isabella ava</p>
+                    <span class="beauty-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần bài viết Trending (Xu hướng) -->
+    <section id="trending-article">
+      <div class="container-fluid">
+        <h2 class="trending-article-heading">Trending Now</h2>
+        <div class="trending-article-wrapper">
+          <article class="trending-article-item">
+            <div class="trending-article-content">
+              <img src="images/trending1.jpg" alt="article thumb" class="trending-article-thumb" />
+              <div class="trending-article-info">
+                <a href="#" class="category-label">Sports</a>
+                <h3 class="trending-article-title">
+                  <a href="#" class="trending-article-link">Playing footbal with your feet is one thing.</a>
+                </h3>
+                <p class="trending-article-description">
+                  Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis vitae sit.
+                </p>
+                <div class="trending-article-meta">
+                  <img src="./images/a2.jpg" alt="" class="trending-article-author-avatar" />
+                  <div>
+                    <p class="trending-article-author-name">Charlotte mia</p>
+                    <span class="trending-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="trending-article-item">
+            <div class="trending-article-content">
+              <img src="images/trending2.jpg" alt="article thumb" class="trending-article-thumb" />
+              <div class="trending-article-info">
+                <a href="#" class="category-label">Fitness</a>
+                <h3 class="trending-article-title">
+                  <a href="#" class="trending-article-link">
+                    Experience the state of the art fitness! Fitness on Track
+                  </a>
+                </h3>
+                <p class="trending-article-description">
+                  Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis vitae sit.
+                </p>
+                <div class="trending-article-meta">
+                  <img src="./images/a3.jpg" alt="" class="trending-article-author-avatar" />
+                  <div>
+                    <p class="trending-article-author-name">ELizabeth</p>
+                    <span class="trending-article-date">July 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Subscribe -->
+    <section id="subscribe">
+      <div class="container">
+        <div class="subscribe-wrapper">
+          <div class="subscribe-content">
+            <h2 class="subscribe-heading">Subscribe to our newsletter!</h2>
+            <p class="subscribe-description">We'll send you the best of our blog just once a month. We promise.</p>
+            <form action="" class="subscribe-form">
+              <input type="email" class="subscribe-input-email" placeholder="Email address" />
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <a href="#" class="main-logo">
+              <i class="fa-regular fa-newspaper logo-icon"></i>
+              NewsBlog
+            </a>
+            <p class="all-rights-reserved">© 2020. All Rights Reserved.</p>
+            <h3 class="design-by">
+              Design by
+              <span class="design-by-company">Company</span>
+            </h3>
+          </div>
+          <div class="footer-right">
+            <div class="footer-right-content">
+              <div class="footer-list-wrapper">
+                <h6 class="footer-title">Useful links</h6>
+                <ul class="footer-list">
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">food blogs</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Advertise with us</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Our Authors</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Get in touch</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-list-wrapper">
+                <h6 class="footer-title">Categories</h6>
+                <ul class="footer-list">
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Beauty</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Fashion and Style</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Food and Wellness</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Lifestyle</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-list-wrapper">
+                <h6 class="footer-title">Social Media</h6>
+                <ul class="footer-list">
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Facebook</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Twitter</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Linkedin</a>
+                  </li>
+                  <li class="footer-list-item">
+                    <a href="#" class="footer-link">Dribbble</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
