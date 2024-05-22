@@ -33,11 +33,13 @@ elbtnaway3.addEventListener('click', function () {
     score_away(elbtnaway3);
 });
 
-
 function score_home(btnhome) {
     let score = parseInt(btnhome.textContent);
     let scorehome = parseInt(elscorehome.textContent);
     elscorehome.textContent = score + scorehome;
+    if(elscorehome.textContent < 0 || elscorehome.textContent == 0){
+        elscorehome.textContent = "00";
+    }
     if (elscorehome.textContent > 0 && elscorehome.textContent < 10) {
         elscorehome.textContent = "0" + elscorehome.textContent
     }
@@ -47,6 +49,9 @@ function score_away(btnaway) {
     let score = parseInt(btnaway.textContent);
     let scoreaway = parseInt(elscoreaway.textContent);
     elscoreaway.textContent = score + scoreaway;
+    if(elscoreaway.textContent < 0 || elscoreaway.textContent == 0){
+        elscoreaway.textContent = "00";
+    }
     if (elscoreaway.textContent > 0 && elscoreaway.textContent < 10) {
         elscoreaway.textContent = "0" + elscoreaway.textContent
     }
