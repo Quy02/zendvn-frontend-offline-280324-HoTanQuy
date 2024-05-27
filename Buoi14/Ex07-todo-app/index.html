@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">Todo App</h1>
+      <div>
+        <h3>Search</h3>
+        <form action="">
+          <input type="text" id ="input-search"/>
+          <button type="button" class="button-primary" id="btn-search">Search</button>
+          <button type="button" id="btn-clear">Clear</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Sort</h3>
+        <button type="button" id = "btn-Default">Default</button>
+        <button type="button" id = "btn-ASC">ASC</button>
+        <button type="button" id = "btn-DESC">DESC</button>
+      </div>
+
+      <div>
+        <h3>Form</h3>
+        <form action="">
+          <input type="text" id = "new-name"/>
+          <button type="button" class="button-primary" id ="save">Save</button>
+          <button type="button" id="btn-cancel">Cancel</button>
+        </form>
+      </div>
+
+        <h3>List</h3>
+        <ul id ="work">
+
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
