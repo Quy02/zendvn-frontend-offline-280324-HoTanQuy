@@ -6,8 +6,9 @@ let elmBox = document.getElementById('color-box')
 
 
 elmButton.addEventListener('click', function () {
-    elmColor.textContent = random_color();
-    elmBox.style.backgroundColor = random_color();
+    let color = random_color();
+    elmColor.textContent = color;
+    elmBox.style.backgroundColor = color;
 });
 
 elmColor.addEventListener('click', function () {
