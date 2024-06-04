@@ -42,7 +42,7 @@ elmGenerate.addEventListener('click', function () {
 })
 
 //Copy mật khẩu
-elmResult.addEventListener('click', function(){
+elmResult.addEventListener('click', function () {
     let result = elmResult.textContent;
     navigator.clipboard.writeText(result);
     alert("Copied the text: " + result);
