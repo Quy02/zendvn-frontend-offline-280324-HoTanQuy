@@ -90,4 +90,5 @@ elmCancel.addEventListener('click', function () {
 elmClear.addEventListener('click', function () {
   elmInputSearch.value = ""
 })
+
 //ex5-6
