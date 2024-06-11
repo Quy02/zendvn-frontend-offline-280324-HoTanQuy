@@ -16,14 +16,19 @@ const elBtnSave = document.getElementById('btnSave');
 let arr = [];
 let elmBtnDelete = document.getElementById('btnDelete');
 // Biến sắp xếp
-let clickCount = 0;
+let Count = 0;
 let elmBtnSort = document.getElementById('btn-sort')
-
+// Biến search
+let elInputSearch = document.getElementById('inputSearch')
+let elBtnSearch = document.getElementById('btnSearch')
+// Lấy dữ liệu
 let CATEGORIES = JSON.parse(localStorage.getItem('CATEGORIES'));
 let POST = JSON.parse(localStorage.getItem('POST'));
+// Biến search
+
 
 elmList = document.getElementById("post");
-renderList(POST, CATEGORIES)
+renderList(POST)
 
 // khởi tạo modal
 const formModal = new bootstrap.Modal(document.getElementById('formModal'), {
@@ -42,15 +47,13 @@ elBtnCreate.addEventListener('click', () => {
   elThumbPreview.src = ""
 });
 // Event Search
-let elInputSearch = document.getElementById('inputSearch')
-let elBtnSearch = document.getElementById('btnSearch')
 elBtnSearch.addEventListener('click', () => {
   let searchValue = elInputSearch.value.trim();
   if (!searchValue) {
     alert('Vui lòng nhập từ khóa cần tìm!');
   } else {
     let searchList = POST.filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()));
-    renderList(searchList, CATEGORIES);
+    renderList(searchList);
   }
 });
 // image
@@ -69,7 +72,7 @@ elInputThumb.addEventListener('change', () => {
   }
 });
 
-// Even Save
+// Event Save
 elBtnSave.addEventListener('click', () => {
   if (isEditing && currentId) {
     const index = POST.findIndex(post => post.id === currentId);
@@ -102,7 +105,7 @@ elBtnSave.addEventListener('click', () => {
     POST.push(obj);
     localStorage.setItem('POST', JSON.stringify(POST));
   }
-  renderList(POST, CATEGORIES);
+  renderList(POST);
   isEditing = false;
   currentId = null;
   formModal.hide();
@@ -122,12 +125,12 @@ elmBtnDelete.addEventListener('click', function () {
       }
     });
     localStorage.setItem('POST', JSON.stringify(POST));
-    renderList(POST, CATEGORIES);
+    renderList(POST);
   }
 });
 // Sắp xếp
 elmBtnSort.addEventListener('click', function () {
-  sortTodos();
+  sortPost();
 })
 //Xóa và edit
 elmList.addEventListener('click', (e) => {
@@ -139,11 +142,7 @@ elmList.addEventListener('click', (e) => {
     currentId = el.dataset.id;
     console.log(currentId)
     const post = POST.find(post => post.id === currentId);
-    if (post.status === true) {
-      elmStatusActive.checked = true;
-    } else {
-      elmStatusInactive.checked = true;
-    }
+    (post.status ? elmStatusActive : elmStatusInactive).checked = true;
     elmListCategory.innerHTML = optionCategory(post.categoryId);
     elmAddTitle.value = post.title
     elmAddDescription.value = post.description
@@ -156,7 +155,7 @@ elmList.addEventListener('click', (e) => {
     if (confirm('Bạn chắc chắn muốn xóa bài viết này?')) {
       POST.splice(index, 1);
       localStorage.setItem('POST', JSON.stringify(POST));
-      renderList(POST, CATEGORIES);
+      renderList(POST);
     }
   }
   if (el.classList.contains('btn-choose')) {
@@ -175,7 +174,7 @@ elmList.addEventListener('click', (e) => {
   }
 });
 
-function renderList(POST, CATEGORIES) {
+function renderList(POST) {
   let html = '';
   POST.forEach((item, index) => {
     const category = CATEGORIES.find(category => category.id === item.categoryId);
@@ -226,9 +225,9 @@ function optionCategory(currentCategory) {
   return html;
 }
 
-function sortTodos() {
-  clickCount++;
-  if (clickCount === 1) {
+function sortPost() {
+  Count++;
+  if (Count === 1) {
     let sortedList = POST.toSorted((a, b) => {
       let titleA = a.title.toLowerCase();
       let titleB = b.title.toLowerCase();
@@ -236,16 +235,16 @@ function sortTodos() {
     });
     renderList(sortedList, CATEGORIES);
 
-  } else if (clickCount === 2) {
+  } else if (Count === 2) {
     let sortedList = POST.toSorted((a, b) => {
       let titleA = a.title.toLowerCase();
       let titleB = b.title.toLowerCase();
       return titleA < titleB ? 1 : -1;
     });
     renderList(sortedList, CATEGORIES);
-  } else if (clickCount === 3) {
-    renderList(POST, CATEGORIES);
-    clickCount = 0;
+  } else if (Count === 3) {
+    renderList(POST);
+    Count = 0;
   }
 }
 
