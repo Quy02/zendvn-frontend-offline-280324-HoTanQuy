@@ -148,7 +148,6 @@ elmList.addEventListener('click', (e) => {
 });
 // Event Save
 elmSave.addEventListener('click', function () {
-  console.log("xin chao " + isEditing + currentId)
   if (isEditing && currentId) {
     const index = CATEGORIES.findIndex(category => category.id === currentId);
     CATEGORIES[index].name = elmNameEdit.value;
