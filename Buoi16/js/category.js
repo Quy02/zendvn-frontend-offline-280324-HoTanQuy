@@ -88,8 +88,18 @@ let elmSort = document.getElementById('sort-add-edit');
 let elInputSearch = document.getElementById('input-search');
 let elBtnSearch = document.getElementById('btn-search')
 let elBtnClear = document.getElementById('btn-clear')
-
+//Phân trang
+let currentPage = 1;
+let perPage = 5;
+let totalPage = Math.ceil(CATEGORIES.length / perPage);
+let pagination = document.getElementById("pagination1");
 renderList(CATEGORIES);
+//Sắp xếp
+let btnsortByName = document.getElementById('sortByName')
+let btnsortByOder = document.getElementById('sortByOder')
+let Count = 0;
+let Count2 = 0;
+
 
 
 // Event Search
@@ -142,6 +152,7 @@ elmList.addEventListener('click', (e) => {
     const index = CATEGORIES.findIndex(category => category.id === id);
     if (confirm('Bạn chắc chắn muốn xóa công việc này?')) {
       CATEGORIES.splice(index, 1);
+      localStorage.setItem('CATEGORIES', JSON.stringify(CATEGORIES));
       renderList(CATEGORIES);
     }
   }
@@ -162,7 +173,9 @@ elmSave.addEventListener('click', function () {
     };
     CATEGORIES.push(obj);
   }
+
   renderList(CATEGORIES);
+  localStorage.setItem('CATEGORIES', JSON.stringify(CATEGORIES));
   formModal.hide();
   isEditing = false;
   currentId = null;
@@ -174,29 +187,116 @@ function checked(item) {
   else
     return '';
 }
+function handlePageNumber(num) {
+  currentPage = num;
+  console.log(currentPage);
+  renderList(CATEGORIES);
+}
+function NextPage(currentPage2) {
+  if (currentPage2 != totalPage) {
+    currentPage = currentPage2 + 1;
+    renderList(CATEGORIES);
+  }
+}
+function PreviousPage(currentPage2) {
+  if (currentPage2 != 1) {
+    currentPage = currentPage2 - 1;
+    renderList(CATEGORIES);
+  }
+}
+function renderPageNumber() {
+
+  pagination.innerHTML = '';
+
+  pagination.innerHTML = `<button type="button" class="page-link" onclick="PreviousPage(${currentPage})" ${currentPage === 1 ? 'style="color: #c4c4c4;"' : ''} >prev</button>`
+  for (let i = 1; i <= totalPage; i++) {
+    pagination.innerHTML += `<li onclick="handlePageNumber(${i})" class="page-item ${i === currentPage ? 'active' : ''}"><button type="button" class="page-link">${i}</button></li>`;
+  }
+  pagination.innerHTML += `<button type="button" class="page-link" onclick="NextPage(${currentPage})" ${currentPage === totalPage ? 'style="color: #c4c4c4;"' : ''}>next</button>`
+  console.log(totalPage)
+}
 
 function renderList(arr) {
   let html = '';
-  arr.forEach((item) => {
+  let start = (currentPage - 1) * perPage;
+  let end = start + perPage;
+  let perCATEGORIES = arr.slice(start, end);
+
+  console.log(perCATEGORIES);
+  perCATEGORIES.forEach((item) => {
     console.log(item);
     html += /*html */ `
-            <tr>
-            <td>
-              <input type="checkbox" class="form-check-input" />
-            </td>
-            <td>${item.id}</td>
-            <td>${item.name}</td>
-            <td>
-              <input id ="status" class="form-check-input" type="checkbox"${checked(item)}/>
-            </td>
-            <td>
-              <input type="number" class="form-control input-ordering" value="${item.ordering}"/>
-            </td>
-            <td>
-              <button class="btn btn-sm btn-info btn-edit" data-id= ${item.id}>Edit</button>
-              <button class="btn btn-sm btn-danger btn-delete" data-id= ${item.id}>Delete</button>
-            </td>
-          </tr>`;
+      <tr>
+        <td>
+          <input type="checkbox" class="form-check-input" />
+        </td>
+        <td>${item.id}</td>
+        <td>${item.name}</td>
+        <td>
+          <input id="status" class="form-check-input" type="checkbox"${checked(item)}/>
+        </td>
+        <td>
+          <input type="number" class="form-control input-ordering" value="${item.ordering}"/>
+        </td>
+        <td>
+          <button class="btn btn-sm btn-info btn-edit" data-id=${item.id}>Edit</button>
+          <button class="btn btn-sm btn-danger btn-delete" data-id=${item.id}>Delete</button>
+        </td>
+      </tr>`;
   });
   elmList.innerHTML = html;
+  renderPageNumber();
+}
+
+
+btnsortByName.addEventListener('click', function(){
+  sort();
+})
+btnsortByOder.addEventListener('click', function(){
+  sort2();
+})
+function sort() {
+  Count++;
+  if (Count === 1) {
+    let sortedList = CATEGORIES.toSorted((a, b) => {
+      let titleA = a.name.toLowerCase();
+      let titleB = b.name.toLowerCase();
+      return titleA < titleB ? -1 : 1;
+    });
+    renderList(sortedList);
+
+  } else if (Count === 2) {
+    let sortedList = CATEGORIES.toSorted((a, b) => {
+      let titleA = a.name.toLowerCase();
+      let titleB = b.name.toLowerCase();
+      return titleA < titleB ? 1 : -1;
+    });
+    renderList(sortedList);
+  } else if (Count === 3) {
+    renderList(CATEGORIES);
+    Count = 0;
+  }
+}
+
+function sort2() {
+  Count2++;
+  if (Count2 === 1) {
+    let sortedList = CATEGORIES.toSorted((a, b) => {
+      let titleA = a.ordering;
+      let titleB = b.ordering;
+      return titleA < titleB ? -1 : 1;
+    });
+    renderList(sortedList);
+
+  } else if (Count2 === 2) {
+    let sortedList = CATEGORIES.toSorted((a, b) => {
+      let titleA = a.ordering;
+      let titleB = b.ordering;
+      return titleA < titleB ? 1 : -1;
+    });
+    renderList(sortedList);
+  } else if (Count2 === 3) {
+    renderList(CATEGORIES);
+    Count2 = 0;
+  }
 }

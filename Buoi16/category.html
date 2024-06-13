@@ -135,7 +135,7 @@
                         <input type="checkbox" class="form-check-input" />
                       </td>
                       <th>Id</th>
-                      <th class="col-sort up">
+                      <th class="col-sort up" id="sortByName">
                         <div class="col-sort-content">
                           Tên
                           <button class="sort-icon-group">
@@ -145,7 +145,7 @@
                         </div>
                       </th>
                       <th>Trạng thái</th>
-                      <th class="col-sort down">
+                      <th class="col-sort down" id="sortByOder">
                         <div class="col-sort-content">
                           Sắp xếp
                           <button class="sort-icon-group">
@@ -197,7 +197,7 @@
               </div>
               <div class="card-footer d-flex align-items-center">
                 <p class="m-0 text-secondary">Showing <span>1</span> to <span>8</span> of <span>16</span> entries</p>
-                <ul class="pagination m-0 ms-auto">
+                <ul class="pagination m-0 ms-auto" id="pagination1">
                   <li class="page-item disabled">
                     <button type="button" class="page-link">prev</button>
                   </li>
