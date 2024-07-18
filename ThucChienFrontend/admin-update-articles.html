@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Zaira - News Magazine HTML Template</title>
+    <meta name="description" content="Zaira - News Magazine HTML Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="loader-inner">
+            <div id="loader">
+                <h2 id="bg-loader">zaira<span>.</span></h2>
+                <h2 id="fg-loader">zaira<span>.</span></h2>
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Dark/Light-toggle -->
+    <div class="darkmode-trigger">
+        <label class="modeSwitch">
+            <input type="checkbox">
+            <span class="icon"></span>
+        </label>
+    </div>
+    <!-- Dark/Light-toggle-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <x-header></x-header>
+    <!-- header-area-end -->
+
+
+    <!-- main-area -->
+    <main class="fix">
+
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-content">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Cập nhật bài viết</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
+        <main id="main">
+            <section id="contact" class="contact mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb-2">
+                            <h1 class="page-title">Admin Update Article</h1>
+                        </div>
+                    </div>
+                    <div class="form mt-5">
+                        <div class="row">
+                            <div class="col-lg-6 mx-auto">
+                                <div id="form-message"></div>
+                                <form action="index-6.html" id="auth-form" method="post" role="form"
+                                    class="php-email-form">
+                                    <div class="form-group">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg"
+                                            class="w-100 mb-1" alt="picture" id="thumbReview">
+                                        <input type="text" class="form-control" name="thumb" id="thumb"
+                                            placeholder="thumb link" required />
+                                    </div>
+                                    <button class="btn btn-success d-block w-100 mt-1 mb-4" style="background-color: rgb(0, 187, 44);" id="randomPhoto">Random
+                                        photo</button>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="title" id="title"
+                                            placeholder="title" required />
+                                    </div>
+                                    <select class="form-select mb-4" id="category_id" name="category_id">
+                                        <option selected="">Chọn danh mục</option>
+                                        <option value="1">Thế giới</option>
+                                        <option value="2">Thời sự</option>
+                                        <option value="3">Kinh doanh</option>
+                                        <option value="5">Giải trí</option>
+                                        <option value="6">Thể thao</option>
+                                        <option value="7">Pháp luật</option>
+                                        <option value="8">Giáo dục</option>
+                                        <option value="9">Sức khỏe</option>
+                                        <option value="10">Đời sống</option>
+                                        <option value="11">Du lịch</option>
+                                        <option value="12">Khoa học</option>
+                                        <option value="13">Số hóa</option>
+                                        <option value="14">Xe</option>
+                                    </select>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" rows="5" name="description"
+                                            id="description" placeholder="description"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" rows="8" name="content" id="content"
+                                            placeholder="Content"></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="./admin-list-articles.html" class="btn btn-primary">Back</a>
+                                        <button type="submit">Update</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .ck-editor__editable {
+                            height: 200px;
+                        }
+                    </style>
+                    <!-- End Contact Form -->
+                </div>
+            </section>
+        </main>
+        <!-- End #main -->
+
+        <!-- contact-area -->
+
+        <!-- newsletter-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer-area -->
+    <x-footer></x-footer>
+    <!-- footer-area-end -->
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/relativeTime.min.js"></script>
+    <script src="./component/footer.js"></script>
+    <script src="./component/header.js"></script>
+    <script src="./js/general.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/admin-update-articles.js"></script>
+
+</body>
+
+</html>
